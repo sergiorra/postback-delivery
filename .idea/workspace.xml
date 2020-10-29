@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499f63c8-c5d0-4c5e-bf24-c30652f14f9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliver-app/cmd/deliver-app/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingest-app/ingest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingest-app/resources.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliver-app/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliver-app/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliver-app/cmd/deliver-app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/cmd/deliver-app/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +53,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deliver-app" />
+      <recent name="$PROJECT_DIR$/deliver-app/cmd/deliver-app" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -75,5 +79,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="696" y="400" key="#Go_Modules" timestamp="1603993904827">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="696" y="400" key="#Go_Modules/0.0.1792.1120@0.0.1792.1120" timestamp="1603993904827" />
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604000418451">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604000418451" />
+    <state x="642" y="422" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604000114651">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="642" y="422" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1792.1120@0.0.1792.1120" timestamp="1604000114651" />
   </component>
 </project>

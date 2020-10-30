@@ -1,20 +1,25 @@
 package postback
 
+import (
+	"net/url"
+	"regexp"
+
+	"github.com/sergiorra/postback-delivery/deliver-app/internal/models/enpoint"
+)
+
 // Postback representation of postback into struct
 type Postback struct {
-	Endpoint	Endpoint   	`json:"endpoint"`
-	Data   		[]Data 		`json:"data"`
+	Endpoint	endpoint.Endpoint   	`json:"endpoint"`
+	Data   		[]map[string]string 	`json:"data"`
 }
 
-// Endpoint representation of endpoint into struct
-type Endpoint struct {
-	Method 	string		`json:"method"`
-	Url   	string 		`json:"url"`
+// MountURL replaces all query params by matching with each key, leaves empty string if it doesn't find any match
+func (p *Postback) MountURL() {
+	for k, v := range p.Data[0] {
+		v = url.QueryEscape(v)
+		re := regexp.MustCompile(regexp.QuoteMeta("{" + k + "}"))
+		p.Endpoint.Url = re.ReplaceAllString(p.Endpoint.Url, v)
+	}
+	re := regexp.MustCompile("{.*?}")
+	p.Endpoint.Url = re.ReplaceAllString(p.Endpoint.Url, "")
 }
-
-// Data representation of data into struct
-type Data struct {
-	Key		string  `json:"key"`
-	Value   string 	`json:"value"`
-}
-

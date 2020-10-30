@@ -3,10 +3,9 @@ package agent
 import (
 	"encoding/json"
 	"fmt"
-	"log"
-
 	"github.com/sergiorra/postback-delivery/deliver-app/internal/models/postback"
 	"github.com/sergiorra/postback-delivery/deliver-app/internal/repository/redis"
+	"log"
 )
 
 type deliveryAgent struct {
@@ -31,9 +30,12 @@ func (d *deliveryAgent) Start() {
 }
 
 func (d *deliveryAgent) process(message string) {
-	postback := postback.Postback{}
-	if err := json.Unmarshal([]byte(message), &postback); err != nil {
+	fmt.Println(message)
+	postback := &postback.Postback{}
+	if err := json.Unmarshal([]byte(message), postback); err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Println(message)
+	postback.MountURL()
+	fmt.Println(postback.Endpoint.Url)
+
 }

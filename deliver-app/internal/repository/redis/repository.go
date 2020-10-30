@@ -2,20 +2,20 @@ package redis
 
 import (
 	"context"
-	"log"
 
 	"github.com/go-redis/redis/v8"
 )
 
 var ctx = context.Background()
 
+// repository representation of repository into struct
 type repository struct {
 	client *redis.Client
 }
 
 type DeliveryRepo interface {
-	CheckConnection()
-	PopMessage() string
+	CheckConnection() error
+	PopMessage() (string, error)
 }
 
 // NewRepository initialize redis repository
@@ -28,18 +28,19 @@ func NewRepository(addr, port string) DeliveryRepo {
 }
 
 // CheckConnection check Redis connection
-func (r *repository) CheckConnection() {
+func (r *repository) CheckConnection() error {
 	_, err := r.client.Ping(ctx).Result()
 	if err != nil {
-		log.Fatalln(err)
+		return err
 	}
+	return nil
 }
 
-// PopMessage check Redis connection
-func (r *repository) PopMessage() string {
+// PopMessage pop a message from Redis
+func (r *repository) PopMessage() (string, error){
 	str, err := r.client.BRPop(ctx, 0, "data").Result()
 	if err != nil {
-		log.Fatalln(err)
+		return "", err
 	}
-	return str[1]
+	return str[1], nil
 }

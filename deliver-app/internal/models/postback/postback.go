@@ -15,10 +15,12 @@ type Postback struct {
 
 // MountURL replaces all query params by matching with each key, leaves empty string if it doesn't find any match
 func (p *Postback) MountURL() {
-	for k, v := range p.Data[0] {
-		v = url.QueryEscape(v)
-		re := regexp.MustCompile(regexp.QuoteMeta("{" + k + "}"))
-		p.Endpoint.Url = re.ReplaceAllString(p.Endpoint.Url, v)
+	if len(p.Data) > 0 {
+		for k, v := range p.Data[0] {
+			v = url.QueryEscape(v)
+			re := regexp.MustCompile(regexp.QuoteMeta("{" + k + "}"))
+			p.Endpoint.Url = re.ReplaceAllString(p.Endpoint.Url, v)
+		}
 	}
 	re := regexp.MustCompile("{.*?}")
 	p.Endpoint.Url = re.ReplaceAllString(p.Endpoint.Url, "")

@@ -8,37 +8,39 @@ import (
 	"github.com/sergiorra/postback-delivery/deliver-app/internal/logger/logfile"
 	"github.com/sergiorra/postback-delivery/deliver-app/internal/models/postback"
 	"github.com/sergiorra/postback-delivery/deliver-app/internal/models/response"
-	"github.com/sergiorra/postback-delivery/deliver-app/internal/repository/redis"
+	"github.com/sergiorra/postback-delivery/deliver-app/internal/repository"
 	"github.com/sergiorra/postback-delivery/deliver-app/internal/request"
 )
 
 type deliveryAgent struct {
-	repo	redis.DeliveryRepo
+	repo	repository.DeliveryRepo
 	logger 	logfile.Logger
 }
 
 // NewDeliveryAgent initialize Delivery Agent
-func NewDeliveryAgent(repo redis.DeliveryRepo, logger logfile.Logger) *deliveryAgent {
+func NewDeliveryAgent(repo repository.DeliveryRepo, logger logfile.Logger) *deliveryAgent {
 	return &deliveryAgent{
 		repo: repo,
 		logger: logger,
 	}
 }
 
+// Start starts the process to pull "postback" messages from redis and manage them
 func (d *deliveryAgent) Start() {
-	err := d.repo.CheckConnection()
-	if err != nil {
-		log.Println(err)
-	}
-
 	f := d.logger.Init()
 	defer f.Close()
 	log.SetOutput(f)
 
+	err := d.repo.CheckConnection()
+	if err != nil {
+		log.Println("ERROR: ", err)
+		return
+	}
+
 	for {
 		message, err := d.repo.PopMessage()
 		if err != nil {
-			log.Println(err)
+			log.Println("ERROR: ", err)
 			continue
 		}
 		go d.process(message)
@@ -46,10 +48,11 @@ func (d *deliveryAgent) Start() {
 
 }
 
+// Start manage each "postback" message, sends a request and log the results
 func (d *deliveryAgent) process(message string) {
 	pb := &postback.Postback{}
 	if err := json.Unmarshal([]byte(message), pb); err != nil {
-		log.Println(err)
+		log.Println("ERROR: ", err)
 		return
 	}
 	pb.MountURL()
@@ -60,20 +63,20 @@ func (d *deliveryAgent) process(message string) {
 	case "get":
 		res, err := req.Get()
 		if err != nil {
-			log.Println(err)
+			log.Println("ERROR: ", err)
 			return
 		}
 		d.logResponse(res)
 	case "post":
 		body, err := json.Marshal(pb.Data[0])
 		if err != nil {
-			log.Println(err)
+			log.Println("ERROR: ", err)
 			return
 		}
 		req.Body = body
 		res, err := req.Post()
 		if err != nil {
-			log.Println(err)
+			log.Println("ERROR: ", err)
 			return
 		}
 		d.logResponse(res)
@@ -81,6 +84,7 @@ func (d *deliveryAgent) process(message string) {
 
 }
 
+// logResponse saves the response data in the log file
 func (d *deliveryAgent) logResponse(res *response.Response) {
 	log.Println("-----------------------------")
 	log.Println("RESPONSE RECEIVED:")

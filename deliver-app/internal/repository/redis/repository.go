@@ -3,6 +3,8 @@ package redis
 import (
 	"context"
 
+	. "github.com/sergiorra/postback-delivery/deliver-app/internal/repository"
+
 	"github.com/go-redis/redis/v8"
 )
 
@@ -11,11 +13,6 @@ var ctx = context.Background()
 // repository representation of repository into struct
 type repository struct {
 	client *redis.Client
-}
-
-type DeliveryRepo interface {
-	CheckConnection() error
-	PopMessage() (string, error)
 }
 
 // NewRepository initialize redis repository

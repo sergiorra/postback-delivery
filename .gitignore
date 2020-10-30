@@ -15,3 +15,5 @@
 # vendor/
 
 deliver-app/logs.txt
+
+deliver-app/bin/

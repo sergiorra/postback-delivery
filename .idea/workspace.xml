@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499f63c8-c5d0-4c5e-bf24-c30652f14f9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deliver-app/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliver-app/internal/agent/delivery-agent.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliver-app/internal/repository/redis/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliver-app/internal/models/postback/postback.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliver-app/resources.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliver-app/cmd/deliver-app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/cmd/deliver-app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliver-app/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliver-app/internal/agent/delivery-agent.go" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/internal/agent/delivery-agent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliver-app/internal/repository/redis/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/internal/repository/redis/repository.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

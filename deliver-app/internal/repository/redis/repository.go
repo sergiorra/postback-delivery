@@ -13,13 +13,13 @@ type repository struct {
 	client *redis.Client
 }
 
-type DeliverRepo interface {
+type DeliveryRepo interface {
 	CheckConnection()
-	PopMessage() []string
+	PopMessage() string
 }
 
 // NewRepository initialize redis repository
-func NewRepository(addr, port string) DeliverRepo {
+func NewRepository(addr, port string) DeliveryRepo {
 	return &repository{
 		client: redis.NewClient(&redis.Options{
 			Addr: addr + ":" + port,
@@ -36,10 +36,10 @@ func (r *repository) CheckConnection() {
 }
 
 // PopMessage check Redis connection
-func (r *repository) PopMessage() []string {
+func (r *repository) PopMessage() string {
 	str, err := r.client.BRPop(ctx, 0, "data").Result()
 	if err != nil {
-		log.Println(err)
+		log.Fatalln(err)
 	}
-	return str
+	return str[1]
 }

@@ -2,7 +2,6 @@ package request
 
 import (
 	"bytes"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"time"
@@ -32,9 +31,7 @@ func NewRequest(url, method string) *request {
 // Get sends a GET request to an specific endpoint and returns response info
 func (req *request) Get() (*response.Response, error) {
 	deliveryTime := time.Now()
-	fmt.Println("Requesting: ", req.url)
 	res, err := http.Get(req.url)
-	fmt.Println("Response: ", res)
 	if err != nil {
 		return &response.Response{}, err
 	}
@@ -48,9 +45,7 @@ func (req *request) Get() (*response.Response, error) {
 // Post sends a POST request to an specific endpoint and returns response info
 func (req *request) Post() (*response.Response, error) {
 	deliveryTime := time.Now()
-	fmt.Println("Requesting: ", req.url)
 	res, err := http.Post(req.url, ContentType, bytes.NewBuffer(req.Body))
-	fmt.Println("Response: ", res)
 	if err != nil {
 		return &response.Response{}, err
 	}

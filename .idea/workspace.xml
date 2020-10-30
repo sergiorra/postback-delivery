@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499f63c8-c5d0-4c5e-bf24-c30652f14f9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deliver-app/go.mod" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/deliver-app/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliver-app/internal/agent/delivery-agent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliver-app/internal/repository/redis/repository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliver-app/cmd/deliver-app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/cmd/deliver-app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliver-app/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jY5DzvFNfEQ0eAbHYMBNCT5hrQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,11 +56,15 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -80,6 +89,12 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
     <state x="696" y="400" key="#Go_Modules" timestamp="1603993904827">
       <screen x="0" y="0" width="1792" height="1120" />
@@ -93,5 +108,13 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="642" y="422" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1792.1120@0.0.1792.1120" timestamp="1604000114651" />
+    <state x="795" y="429" key="EnvironmentVariablesDialog" timestamp="1604049326533">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="795" y="429" key="EnvironmentVariablesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604049326533" />
+    <state x="397" y="199" key="SettingsEditor" timestamp="1604049330022">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1604049330022" />
   </component>
 </project>

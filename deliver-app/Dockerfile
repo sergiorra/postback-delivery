@@ -1,4 +1,13 @@
 FROM golang:1.15
 
-RUN export GOPATH=${HOME}/go
-RUN go get github.com/go-redis/redis/v8
+LABEL maintainer="sergiorra17@gmail.com"
+LABEL application="deliver-app"
+
+RUN apt-get update && \
+    apt-get upgrade -y
+
+COPY . /go/src/deliverapp
+WORKDIR /go/src/deliverapp
+
+RUN go mod tidy
+

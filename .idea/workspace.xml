@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499f63c8-c5d0-4c5e-bf24-c30652f14f9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliver-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -8,5 +8,5 @@ RUN apt-get update && \
 
 ENV DISPLAY_ERRORS="On"
 
-COPY php.ini /usr/local/tc/php/
-COPY index.php /var/www/html/
+COPY ingest-app/php.ini /usr/local/tc/php/
+COPY ingest-app/index.php /var/www/html/

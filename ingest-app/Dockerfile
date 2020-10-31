@@ -4,7 +4,8 @@ LABEL maintainer="sergiorra17@gmail.com"
 LABEL application="ingest-app"
 
 RUN apt-get update && \
-    pecl install redis-5.3.2
+    pecl install redis-5.3.2 && \
+    docker-php-ext-enable redis
 
 ENV DISPLAY_ERRORS="On"
 

@@ -3,7 +3,7 @@
 $redis = new Redis();
 
 try {
-    $redis->connect("127.0.0.1", 6379);
+    $redis->connect("redis", 6379);
 } catch (RedisException $ex) {
     print_r($ex);
 }

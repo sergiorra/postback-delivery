@@ -1,0 +1,24 @@
+version: '3.0'
+services:
+  ingest-app:
+    image: understood17/postback-delivery:ingest-app
+    volumes:
+      - ./ingest-app:/var/www/html/
+    ports:
+      - 8000:80
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    command: redis-server --port 6379
+
+  deliver-app:
+    image: understood17/postback-delivery:deliver-app
+    volumes:
+      - ./deliver-app:/go/src/deliverapp
+    working_dir: /go/src/deliverapp
+    command: go run cmd/deliver-app/main.go
+    depends_on:
+      - redis
+

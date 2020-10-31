@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499f63c8-c5d0-4c5e-bf24-c30652f14f9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deliver-app/dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingest-app/dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingest-app/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingest-app/ingest.php" beforeDir="false" afterPath="$PROJECT_DIR$/ingest-app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliver-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deliver-app/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

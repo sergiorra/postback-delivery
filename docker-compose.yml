@@ -2,8 +2,6 @@ version: '3.0'
 services:
   ingest-app:
     image: understood17/postback-delivery:ingest-app
-    volumes:
-      - ./ingest-app:/var/www/html/
     ports:
       - 8000:80
     depends_on:

@@ -6,3 +6,4 @@ run php: https://stackoverflow.com/questions/19951457/double-click-and-run-the-p
 Connecting and pushing to Redis: https://www.tutorialspoint.com/redis/redis_php.htm
 get POST data: https://stackoverflow.com/questions/8207488/get-all-variables-sent-with-post
 PHP encode and decode Json data: https://www.tutorialrepublic.com/php-tutorial/php-json-parsing.php
+Install php redis on docker: https://stackoverflow.com/questions/31369867/how-to-install-php-redis-extension-using-the-official-php-docker-image-approach

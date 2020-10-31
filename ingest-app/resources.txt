@@ -1,4 +1,5 @@
 install redis on local machine: https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298
+php and redis service on mac: https://tableplus.com/blog/2018/10/how-to-start-stop-restart-redis.html
 install: https://superuser.com/questions/292127/how-to-install-php-pear-pecl-and-apc-with-homebrew-on-mac-os-x
 install redis php: https://stackoverflow.com/questions/51908004/install-phpredis-mac-osx/52925300
 fix php redis installation: https://mark.shropshires.net/blog/how-reinstall-homebrew-php-after-move-homebrewphp-homebrewcore

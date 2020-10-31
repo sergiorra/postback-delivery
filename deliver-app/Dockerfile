@@ -6,7 +6,7 @@ LABEL application="deliver-app"
 RUN apt-get update && \
     apt-get upgrade -y
 
-COPY . /go/src/deliverapp
+COPY ./deliver-app /go/src/deliverapp
 WORKDIR /go/src/deliverapp
 
 RUN go mod tidy

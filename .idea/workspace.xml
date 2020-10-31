@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ingest-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ingest-app/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingest-app/php.ini" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,18 +97,18 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="696" y="400" key="#Go_Modules/0.0.1792.1120@0.0.1792.1120" timestamp="1603993904827" />
-    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604000418451">
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604159388094">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604000418451" />
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604159388094" />
     <state x="623" y="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604132291056">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="623" y="369" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1604132291056" />
-    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604081530500">
+    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604158810171">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604081530500" />
+    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604158810171" />
     <state x="642" y="422" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604000114651">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

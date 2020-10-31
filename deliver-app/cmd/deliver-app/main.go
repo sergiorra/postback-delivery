@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	repo := redis.NewRepository("127.0.0.1", "6379")
+	repo := redis.NewRepository("redis", "6379")
 	logger := logfile.NewLogger("logs.txt")
 	deliveryAgent := agent.NewDeliveryAgent(repo, logger)
 	deliveryAgent.Start()

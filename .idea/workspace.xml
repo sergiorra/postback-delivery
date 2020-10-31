@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="499f63c8-c5d0-4c5e-bf24-c30652f14f9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,10 +115,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="795" y="429" key="EnvironmentVariablesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604049326533" />
-    <state x="484" y="302" key="IDE.errors.dialog" timestamp="1604163995804">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="484" y="297" key="IDE.errors.dialog" timestamp="1604166835646">
+      <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="484" y="302" key="IDE.errors.dialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604163995804" />
+    <state x="484" y="297" key="IDE.errors.dialog/0.23.1792.1017@0.23.1792.1017" timestamp="1604166835646" />
     <state x="397" y="199" key="SettingsEditor" timestamp="1604049330022">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

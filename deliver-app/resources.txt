@@ -1,0 +1,2 @@
+Redis client: https://github.com/go-redis/redis
+Regex in golang: https://medium.com/@baturorkun/regular-expressions-regex-in-golang-b74310662d97

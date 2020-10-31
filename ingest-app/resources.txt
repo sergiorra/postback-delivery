@@ -1,0 +1,8 @@
+install redis on local machine: https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298
+install: https://superuser.com/questions/292127/how-to-install-php-pear-pecl-and-apc-with-homebrew-on-mac-os-x
+install redis php: https://stackoverflow.com/questions/51908004/install-phpredis-mac-osx/52925300
+fix php redis installation: https://mark.shropshires.net/blog/how-reinstall-homebrew-php-after-move-homebrewphp-homebrewcore
+run php: https://stackoverflow.com/questions/19951457/double-click-and-run-the-php-script-on-mac/41729465
+Connecting and pushing to Redis: https://www.tutorialspoint.com/redis/redis_php.htm
+get POST data: https://stackoverflow.com/questions/8207488/get-all-variables-sent-with-post
+PHP encode and decode Json data: https://www.tutorialrepublic.com/php-tutorial/php-json-parsing.php

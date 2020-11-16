@@ -17,3 +17,5 @@
 deliver-app/logs.txt
 
 deliver-app/bin/
+
+.idea/
